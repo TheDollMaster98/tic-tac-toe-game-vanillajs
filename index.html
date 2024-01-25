@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Collegamento agli stili Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <!-- Collegamento ai tuoi stili personalizzati -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Collegamento agli script Bootstrap (jQuery e Popper.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <title>Tic Tac Toe by Loris Dal Santo</title>
+</head>
+
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center mb-2">Tic Tac Toe Game</h1>
+    <h6 class="text-center mb-4">&copy; <span id="currentYear"></span> <span id="companyName"></span>. All rights
+      reserved.</h6>
+    <!-- Form per inserire i nomi dei giocatori -->
+    <div class="form-group mb-3">
+      <label for="playerX" class="form-label">Nome Giocatore X:</label>
+      <input type="text" id="playerX" class="form-control" placeholder="Giocatore X">
+    </div>
+    <div class="form-group mb-3">
+      <label for="playerO" class="form-label">Nome Giocatore O:</label>
+      <input type="text" id="playerO" class="form-control" placeholder="Giocatore O">
+    </div>
+    <div class="form-group mt-3">
+      <button id="setNamesButton" class="btn btn-primary">Imposta Nomi</button>
+    </div>
+
+    <!-- Griglia del gioco -->
+    <div id="game-board" class="board">
+      <!-- Le celle del gioco saranno generate dinamicamente qui -->
+    </div>
+    <!-- Punteggi dei giocatori -->
+    <div class="mb-3">
+      <p>Punteggio:</p>
+      <p id="scoreX">Giocatore X: 0</p>
+      <p id="scoreO">Giocatore O: 0</p>
+    </div>
+    <div>
+      <div class="d-flex justify-content-center align-items-center">
+        <p id="result"></p>
+      </div>
+      
+    </div>
+    <!-- Pulsanti per continuare e resettare la partita -->
+    <div class="d-flex justify-content-between">
+      <button id="continueButton" class="btn btn-primary mt-3 disabled">Continua</button>
+      <button id="resetButton" class="btn btn-danger mt-3">Reset</button>
+    </div>
+
+  </div>
+  <!-- Collegamento al tuo script JavaScript -->
+  <script src="script.js"></script>
+</body>
+</body>
+
+</html>
